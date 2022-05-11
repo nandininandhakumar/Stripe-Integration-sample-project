@@ -80,7 +80,7 @@ def update(request):
             'deleted': True,
         }, {
             'plan': 'price_1KxZTqSE5P0vwzLj5mUgsofY'
-        }]
+        }],
     )
     current_subscription = stripe.Subscription.retrieve(request.user.customer.stripe_subscription_id)
     print(current_subscription)
